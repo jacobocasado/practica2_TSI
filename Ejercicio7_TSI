@@ -1,0 +1,15 @@
+include "globals.mzn";
+var: A = 60;
+var: B = A + 10;
+var: C = B + 5;
+var: D = C + 5;
+var: E = D + 5;
+var: F = D + 2;
+var: G = D + E + 7;
+var: H = C + 3;
+var: I = E + F + 7;
+var: J = E + F + 2;
+var: K = I + J + 5;
+var: L = K + 1;
+
+solve minimize sum([A,B,C,D,E,F,G,H,I,J,K,L]);
